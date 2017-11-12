@@ -4,6 +4,15 @@ Pushover::Pushover(String token, String user) {
 	_token = token;
 	_user = user;
 }
+
+void Pushover::setUser(String user) {
+_user = user;
+}
+void Pushover::setAppToken(String token) {
+_token = token;
+}
+
+
 void Pushover::setMessage(String message) {
 	_message = message;
 }

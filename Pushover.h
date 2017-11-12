@@ -1,3 +1,6 @@
+#ifndef Pushover_h_
+#define Pushover_h_
+
 #include <WiFiClientSecure.h>
 
 class Pushover {
@@ -18,6 +21,8 @@ class Pushover {
 		String _sound;
 	public:
 		Pushover(String,String);
+		void setUser(String user);
+		void setAppToken(String token);
 		void setMessage(String);
 		void setDevice(String);
 		void setTitle(String);
@@ -32,3 +37,5 @@ class Pushover {
 		void setTimeout(uint16_t);
 		boolean send(void);
 };
+
+#endif
